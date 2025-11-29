@@ -1,10 +1,20 @@
-export const data = [
+export interface NewsItem {
+  id: string;
+  image: string;
+  date: string;
+  title: string;
+  description: string;
+  content: string;
+}
+
+export const newsItems: NewsItem[] = [
   {
     id: "nesico-annual-report-2024",
-    title: "NESICO’s pre-tax profit ",
-    publishedDate: "03 September, 2025",
     image:
       "https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    date: "18 DECEMBER 2024",
+    title: "NESICO's Strong Performance in 2024",
     description:
       "New Sudan Insurance Company reports exceptional growth and customer satisfaction in its annual review.",
     content: `
@@ -25,10 +35,10 @@ export const data = [
   },
   {
     id: "new-health-insurance-plans",
-    title: "NESICO’s-pre-tax-profit ",
-    publishedDate: "03 September, 2025",
     image:
-      "https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1713453450934-ffa72b233597?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "10 DECEMBER 2024",
+    title: "Enhanced Health Insurance Plans Launched",
     description:
       "NESICO introduces comprehensive health coverage options for individuals and families across South Sudan.",
     content: `
@@ -49,10 +59,10 @@ export const data = [
   },
   {
     id: "corporate-training-initiative",
-    title: "NESICO’s pre-tax profit ",
-    publishedDate: "03 September, 2025",
     image:
-      "https://images.unsplash.com/photo-1573164574511-73c773193279?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1739287088753-73a9b8b771bc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    date: "5 DECEMBER 2024",
+    title: "NESICO Launches Youth Training Program",
     description:
       "Company invests in developing the next generation of South Sudanese insurance professionals.",
     content: `

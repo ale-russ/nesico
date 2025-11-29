@@ -4,8 +4,8 @@ import { FaSearch } from "react-icons/fa";
 export const Searchbar = () => {
   return (
     <div className="mx-auto px-6 md:px-0">
-      <div className="flex flex-col items-center justify-center mx-auto h-40 border border-[#9A0002]/50 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-[#9A0002]/8 p-4">
-        <p className="font-medium text-[#9A0002]">
+      <div className="flex flex-col items-center justify-center mx-auto h-40 border border-primary/50 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4">
+        <p className="font-medium text-primary">
           Looking for something specific?
         </p>
         <br />
@@ -14,7 +14,7 @@ export const Searchbar = () => {
         >
           <input
             placeholder="Search here..."
-            className="w-full h-full resize-none px-2 focus:outline-none focus:ring-2 focus:ring-[#9a0002]/20 placeholder-gray-500 rounded-xl shadow-sm text-sm flex items-center"
+            className="w-full h-full resize-none px-2 focus:outline-none focus:ring-2 focus:ring-primary/20 placeholder-gray-500 rounded-xl shadow-sm text-sm flex items-center"
           />
           <div className="h-full w-10 bg-primary flex items-center justify-center rounded-r-xl cursor-pointer shadow-sm absolute inset-y-0 right-0">
             <FaSearch color="white" />
@@ -22,7 +22,7 @@ export const Searchbar = () => {
         </div>
       </div>
       <br />
-      <div className="flex justify-between mx-auto border border-[#9A0002]/50 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-[#9A0002]/8 p-4 px-8 my-8 space-y-4 ">
+      <div className="flex justify-between mx-auto border border-primary/50 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4 px-8 my-8 space-y-4 ">
         <h2 className="font-bold text-sm md:text-lg text-center">
           1.2M
           <br />

@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "../hooks/use-toast";
+import HeroWrapper from "../components/HeroWrapper";
 
 const contactInfo = [
   {
@@ -57,18 +58,23 @@ const ContactUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="bg-primary text-primary-foreground py-16 rounded-b-3xl">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-            <p className="text-lg opacity-90">
-              We're here to help. Reach out to us for any questions or
-              assistance.
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="section-padding">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Contact Us
+                </h1>
+                <p className="text-lg opacity-90">
+                  We're here to help. Reach out to us for any questions or
+                  assistance.
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       {/* Contact Section */}
       <section className="section-padding">

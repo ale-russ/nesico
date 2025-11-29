@@ -1,29 +1,80 @@
-import { Shield, Target, Users, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Target,
+  Eye,
+  Users,
+  Award,
+  Shield,
+  Briefcase,
+  Heart,
+  Building,
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import HeroWrapper from "../components/HeroWrapper";
 
 export const AboutUs = () => {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-primary from-primary to-accent text-primary-foreground section-padding rounded-b-3xl pb-12">
+      <HeroWrapper
+        children={
+          <section className="section-padding">
+            <div className="container-width">
+              <div className="max-w-3xl mx-auto text-center animate-fade-in text-white">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                  About NESICO
+                </h1>
+                <p className="text-xl sm:text-2xl opacity-95">
+                  Protecting families and businesses for over 10 years with
+                  comprehensive insurance solutions
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
+
+      {/* Background Section */}
+      <section className="section-padding">
         <div className="container-width">
-          <div className="max-w-3xl mx-auto text-center animate-fade-in text-white">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-              About NESICO
-            </h1>
-            <p className="text-xl sm:text-2xl opacity-95">
-              Protecting families and businesses for over 10 years with
-              comprehensive insurance solutions
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">
+              Our Background
+            </h2>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                New Sudan Insurance Co. Ltd was incorporated in September 2007
+                at the Ministry of Legal Affairs & Constitutional Development
+                and was fully licensed in February 2008 with the Bank of South
+                Sudan (BOSS). The Company has been providing various insurance
+                services in the Republic of South Sudan.
+              </p>
+              <p>
+                It is one of the first companies to be registered with BOSS
+                fulfilling the requisite capital requirement and business
+                license to operate on a professional and trusted insurance
+                undertaking. Such a license is granted after a financial and
+                technical scrutiny by the BOSS (Bank of South Sudan).
+              </p>
+              <p>
+                The Company's head office is in Juba, Nimra Talata at an
+                exquisite state-of-the-art ground plus one complex commissioned
+                in November 2011, making it the first company to build its own
+                office premises within only 3 years of its operation. The
+                Company has also completed a real estate project (NESICO PLAZA)
+                along the Airport Road (about 300m) from Juba International
+                Airport.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-muted">
         <div className="container-width">
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            <Card className="border-2 border-gray-300 hover:border-primary hover:shadow-lg transition-shadow p-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
               <CardContent>
                 <Target className="w-12 h-12 text-primary mb-4" />
                 <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
@@ -35,7 +86,7 @@ export const AboutUs = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-gray-300 hover:border-primary hover:shadow-lg transition-shadow p-4">
+            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
               <CardContent>
                 <Shield className="w-12 h-12 text-primary mb-4" />
                 <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
@@ -50,109 +101,139 @@ export const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="section-padding bg-secondary/30">
+      {/* Our Values */}
+      <section className="section-padding">
         <div className="container-width">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">Our Story</h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Founded over a decade ago, NESICO began with a simple mission:
-                to make quality insurance accessible and understandable for
-                everyone. What started as a small team of dedicated insurance
-                professionals has grown into a trusted partner for thousands of
-                families and businesses.
-              </p>
-              <p>
-                Throughout our 10-year journey, we've remained committed to our
-                core values of integrity, transparency, and customer-first
-                service. We've weathered economic changes, natural disasters,
-                and global challenges alongside our clients, proving time and
-                again that we're here when you need us most.
-              </p>
-              <p>
-                Today, NESICO offers comprehensive coverage across life, health,
-                auto, and property insurance, backed by strong partnerships with
-                leading insurance carriers and a team of experienced advisors
-                who genuinely care about protecting what matters most to you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Core Values */}
-      <section className="section-padding bg-background">
-        <div className="container-width">
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold mb-8 text-center">
             Our Core Values
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-primary" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-bold mb-2">Indigenous Competence</h4>
+                <p className="text-sm text-muted-foreground">
+                  We strive to train competent individuals with the best risk
+                  management practices.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-bold mb-2">Professionalism</h4>
+                <p className="text-sm text-muted-foreground">
+                  Excellence delivered through expertise and competence.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-bold mb-2">Integrity</h4>
+                <p className="text-sm text-muted-foreground">
+                  Maintain honesty, fairness and ethical standards in all our
+                  dealings.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-bold mb-2">Social Responsibility</h4>
+                <p className="text-sm text-muted-foreground">
+                  Environmental concern and community support in all our
+                  operations.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Corporate Governance */}
+      <section className="bg-muted section-padding">
+        <div className="container-width">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Building className="w-8 h-8 text-primary" />
+                <h2 className="text-3xl font-bold">
+                  Corporate Governance & Management
+                </h2>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Trust & Integrity</h3>
+              <p className="text-muted-foreground mb-4">
+                New Sudan Insurance Company is led by a dynamic management team
+                with vast experience in insurance, finance, and risk management.
+                Our governance structure is guided by ethical standards,
+                accountability, and compliance with regulatory frameworks.
+              </p>
               <p className="text-muted-foreground">
-                We build lasting relationships through honest communication and
-                ethical practices
+                The Company is investing heavily in developing the indigenous
+                young South Sudanese to run and manage the affairs of the
+                Company. The Board remains committed to secure proficient
+                insurance personnel under its policy of capacity building by
+                sponsoring various training and courses with internationally
+                recognized certifications.
               </p>
             </div>
-
-            <div
-              className="text-center animate-fade-in"
-              style={{ animationDelay: "0.1s" }}
-            >
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary" />
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Briefcase className="w-8 h-8 text-primary" />
+                <h2 className="text-3xl font-bold">Corporate Role</h2>
               </div>
-              <h3 className="text-2xl font-bold mb-3">Client-Focused</h3>
-              <p className="text-muted-foreground">
-                Your needs come first. We tailor solutions that fit your unique
-                situation
+              <p className="text-muted-foreground mb-4">
+                We strive to establish a harmonized Insurance Industry in the
+                Country by closely working with South Sudan Insurance Union and
+                the Bank of South Sudan at an advisory role.
               </p>
-            </div>
-
-            <div
-              className="text-center animate-fade-in"
-              style={{ animationDelay: "0.2s" }}
-            >
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold mb-3">Excellence</h3>
               <p className="text-muted-foreground">
-                We strive for the highest standards in service, knowledge, and
-                support
+                The Company has spear-headed the formation of the Association of
+                Southern Sudan Insurers (ASSI) in 2010 which was later renamed
+                to South Sudan Insurance Union in 2016.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container-width text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Ready to Get Protected?
-          </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-95">
-            Join thousands of satisfied clients who trust NESICO for their
-            insurance needs
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/"
-              className="inline-block px-8 py-4 bg-background text-primary rounded-lg font-semibold hover:bg-background/90 transition-colors"
-            >
-              Get a Quote
-            </a>
-            <a
-              href="/"
-              className="inline-block px-8 py-4 bg-transparent border-2 border-primary-foreground text-primary-foreground rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors"
-            >
-              Contact Us
-            </a>
+      {/* Why Choose Us */}
+      <section className="section-padding">
+        <div className="container-width">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Why Choose Us?</h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              At New Sudan Insurance, we are dedicated to delivering insurance
+              services with precision and care. We provide tailor-made covers
+              that suit individual and corporate needs, backed by trusted
+              partnerships with leading local and international partners. Our
+              commitment to swift and transparent claims processing ensures
+              clients get timely support when it matters most.
+            </p>
+            <p className="text-muted-foreground mb-8">
+              With expert guidance from our risk consultants, dedicated support
+              team, and a client-centric approach, we go beyond insurance to
+              offer assurance, reliability, and long-term peace of mind.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild>
+                <Link to="/services">View Our Services</Link>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/contact">Contact Us</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
