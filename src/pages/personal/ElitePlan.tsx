@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Crown, Check, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import HeroWrapper from "../../components/HeroWrapper";
+
 const ElitePlan = () => {
   const features = [
     "Unlimited medical coverage worldwide",
@@ -17,17 +19,23 @@ const ElitePlan = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <Crown className="w-16 h-16 mx-auto mb-4 opacity-90" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Elite Plan</h1>
-            <p className="text-lg opacity-90">
-              Premium insurance coverage for discerning individuals
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="pb-16 ">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <Crown className="w-16 h-16 mx-auto mb-4 opacity-90" />
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Elite Plan
+                </h1>
+                <p className="text-lg opacity-90">
+                  Premium insurance coverage for discerning individuals
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       <section className="section-padding">
         <div className="container-width">
@@ -59,7 +67,7 @@ const ElitePlan = () => {
                 <Link to="/contact">Request Elite Consultation</Link>
               </Button>
             </div>
-            <Card className="hover:shadow-lg transition-all duration-300 border border-primary/50 hover:border-primary hover:scale-105 animate-fade-in p-1">
+            <Card className="hover:shadow-lg transition-all duration-300 border border-primary/20 hover:border-primary hover:scale-105 animate-fade-in p-1">
               <CardContent className="p-6">
                 <div className="text-center mb-6">
                   <Crown className="w-12 h-12 text-primary mx-auto mb-3" />

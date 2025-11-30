@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Plane, Check, Globe, Users, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import HeroWrapper from "../../components//HeroWrapper";
+
 const BusinessTravel = () => {
   const benefits = [
     "Medical emergencies abroad",
@@ -17,19 +19,23 @@ const BusinessTravel = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <Globe className="w-16 h-16 mx-auto mb-4 opacity-90" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Corporate Travel Insurance
-            </h1>
-            <p className="text-lg opacity-90">
-              Protect your business travelers worldwide
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="pb-16 ">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <Globe className="w-16 h-16 mx-auto mb-4 opacity-90" />
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Corporate Travel Insurance
+                </h1>
+                <p className="text-lg opacity-90">
+                  Protect your business travelers worldwide
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       <section className="section-padding">
         <div className="container-width">
@@ -63,7 +69,7 @@ const BusinessTravel = () => {
               </div>
             </div>
             <div className="space-y-6">
-              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/50 ">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/20 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -77,7 +83,7 @@ const BusinessTravel = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/50 ">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/20 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -91,7 +97,7 @@ const BusinessTravel = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/50 ">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/20 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">

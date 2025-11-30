@@ -3,7 +3,7 @@ import Life1 from "../../assets/life_1.jpg";
 
 export const AdCards = ({ label, url }) => {
   return (
-    <section className="group mx-auto my-3 md:my-6 w-full max-w-sm overflow-hidden rounded-2xl bg-white border border-primary/50 shadow-primary/8 transition-all duration-300 hover:border-primary drop-shadow-xl hover:scale-105 hover:shadow-2xl hover:drop-shadow-2xl cursor-pointer">
+    <section className="group mx-auto my-3 md:my-6 w-full max-w-sm overflow-hidden rounded-2xl bg-white border border-primary/20 shadow-primary/8 transition-all duration-300 hover:border-primary drop-shadow-xl hover:scale-105 hover:shadow-2xl hover:drop-shadow-2xl cursor-pointer">
       <div className="p-6 text-center">
         <h2 className="text-lg md:text-xl font-semibold text-black mb-4">
           {label}

@@ -38,7 +38,7 @@ const Services = () => {
             {services.map((service, index) => (
               <Card
                 key={service.title}
-                className="border border-primary/50 hover:shadow-lg transition-all hover:scale-105 duration-300 hover:border-primary animate-fade-in pt-2"
+                className="border border-primary/20 hover:shadow-lg transition-all hover:scale-105 duration-300 hover:border-primary animate-fade-in pt-2"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 <CardContent className="p-6">

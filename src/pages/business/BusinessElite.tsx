@@ -3,6 +3,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Crown, Check, Star, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import HeroWrapper from "../../components/HeroWrapper";
+
 const BusinessElite = () => {
   const features = [
     "Executive-level health coverage",
@@ -17,19 +19,23 @@ const BusinessElite = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <Crown className="w-16 h-16 mx-auto mb-4 opacity-90" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Business Elite Plan
-            </h1>
-            <p className="text-lg opacity-90">
-              Premium coverage for your executive team
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="pb-16 ">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <Crown className="w-16 h-16 mx-auto mb-4 opacity-90" />
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Business Elite Plan
+                </h1>
+                <p className="text-lg opacity-90">
+                  Premium coverage for your executive team
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       <section className="section-padding">
         <div className="container-width">

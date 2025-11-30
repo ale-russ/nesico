@@ -10,28 +10,34 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import HeroWrapper from "../../components/HeroWrapper";
+
 const Support = () => {
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <Headphones className="w-16 h-16 mx-auto mb-4 opacity-90" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Customer Support
-            </h1>
-            <p className="text-lg opacity-90">
-              We're here to help you every step of the way
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="pb-16 ">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <Headphones className="w-16 h-16 mx-auto mb-4 opacity-90" />
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Customer Support
+                </h1>
+                <p className="text-lg opacity-90">
+                  We're here to help you every step of the way
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       <section className="section-padding">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Phone className="w-6 h-6 text-primary" />
@@ -48,7 +54,7 @@ const Support = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Mail className="w-6 h-6 text-primary" />
@@ -64,7 +70,7 @@ const Support = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <MapPin className="w-6 h-6 text-primary" />
@@ -78,7 +84,7 @@ const Support = () => {
                 </CardContent>
               </Card>
 
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Clock className="w-6 h-6 text-primary" />
@@ -96,7 +102,7 @@ const Support = () => {
               </Card>
             </div>
 
-            <Card className="bg-muted">
+            <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in bg-muted">
               <CardContent className="p-8 text-center">
                 <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-4">

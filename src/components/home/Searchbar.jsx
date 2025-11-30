@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 export const Searchbar = () => {
   return (
     <div className="mx-auto px-6 md:px-0">
-      <div className="flex flex-col items-center justify-center mx-auto h-40 border border-primary/50 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4">
+      <div className="flex flex-col items-center justify-center mx-auto h-40 border border-primary/20 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4">
         <p className="font-medium text-primary">
           Looking for something specific?
         </p>
@@ -22,7 +22,7 @@ export const Searchbar = () => {
         </div>
       </div>
       <br />
-      <div className="flex justify-between mx-auto border border-primary/50 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4 px-8 my-8 space-y-4 ">
+      <div className="flex justify-between mx-auto border border-primary/20 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4 px-8 my-8 space-y-4 ">
         <h2 className="font-bold text-sm md:text-lg text-center">
           1.2M
           <br />

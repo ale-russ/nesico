@@ -21,10 +21,10 @@ export const AboutUs = () => {
           <section className="section-padding">
             <div className="container-width">
               <div className="max-w-3xl mx-auto text-center animate-fade-in text-white">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
                   About NESICO
                 </h1>
-                <p className="text-xl sm:text-2xl opacity-95">
+                <p className="text-lg opacity-90">
                   Protecting families and businesses for over 10 years with
                   comprehensive insurance solutions
                 </p>
@@ -108,7 +108,7 @@ export const AboutUs = () => {
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+            <Card className="text-center hover:shadow-lg transition-all border border-primary/20 hover:border-primary duration-300 hover:scale-105 animate-fade-in pt-2 ">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-6 h-6 text-primary" />
@@ -121,7 +121,7 @@ export const AboutUs = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+            <Card className="text-center hover:shadow-lg transition-all border border-primary/20 hover:border-primary duration-300 hover:scale-105 animate-fade-in pt-2 ">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-6 h-6 text-primary" />
@@ -133,7 +133,7 @@ export const AboutUs = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+            <Card className="text-center hover:shadow-lg transition-all border border-primary/20 hover:border-primary duration-300 hover:scale-105 animate-fade-in pt-2 ">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-6 h-6 text-primary" />
@@ -146,7 +146,7 @@ export const AboutUs = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/20 hover:scale-105 hover:border-primary hover:shadow-lg transition-all duration-300 p-4">
+            <Card className="text-center hover:shadow-lg transition-all border border-primary/20 hover:border-primary duration-300 hover:scale-105 animate-fade-in pt-2 ">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-6 h-6 text-primary" />

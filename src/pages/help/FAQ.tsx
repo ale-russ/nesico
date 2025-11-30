@@ -8,6 +8,8 @@ import {
 import { HelpCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import HeroWrapper from "../../components/HeroWrapper";
+
 const faqs = [
   {
     question: "How do I file a claim?",
@@ -55,19 +57,23 @@ const faqs = [
 const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <HelpCircle className="w-16 h-16 mx-auto mb-4 opacity-90" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Frequently Asked Questions
-            </h1>
-            <p className="text-lg opacity-90">
-              Find answers to common questions about our insurance services
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="pb-16 ">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <HelpCircle className="w-16 h-16 mx-auto mb-4 opacity-90" />
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Frequently Asked Questions
+                </h1>
+                <p className="text-lg opacity-90">
+                  Find answers to common questions about our insurance services
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       <section className="section-padding">
         <div className="container-width max-w-3xl mx-auto">

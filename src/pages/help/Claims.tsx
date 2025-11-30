@@ -10,6 +10,8 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
+import HeroWrapper from "../../components/HeroWrapper";
+
 const Claims = () => {
   const steps = [
     {
@@ -36,19 +38,23 @@ const Claims = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <section className="bg-primary text-primary-foreground py-16">
-        <div className="container-width px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <FileText className="w-16 h-16 mx-auto mb-4 opacity-90" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Claims Process
-            </h1>
-            <p className="text-lg opacity-90">
-              We're committed to swift and transparent claims processing
-            </p>
-          </div>
-        </div>
-      </section>
+      <HeroWrapper
+        children={
+          <section className="pb-16 ">
+            <div className="container-width px-4 sm:px-6 lg:px-8">
+              <div className="text-center max-w-3xl mx-auto">
+                <FileText className="w-16 h-16 mx-auto mb-4 opacity-90" />
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  Claims Process
+                </h1>
+                <p className="text-lg opacity-90">
+                  We're committed to swift and transparent claims processing
+                </p>
+              </div>
+            </div>
+          </section>
+        }
+      />
 
       <section className="section-padding">
         <div className="container-width">
@@ -70,7 +76,7 @@ const Claims = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card>
+              <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-primary" />
@@ -87,7 +93,7 @@ const Claims = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <AlertCircle className="w-5 h-5 text-primary" />
@@ -104,7 +110,7 @@ const Claims = () => {
               </Card>
             </div>
 
-            <Card className="bg-muted">
+            <Card className="bg-muted pt-2 border-primary/20 transition-all hover:border-primary hover:scale-105 duration-300 animate-fade-in">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6 text-center">
                   Contact Claims Department
