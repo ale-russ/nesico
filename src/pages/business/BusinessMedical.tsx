@@ -58,7 +58,7 @@ const BusinessMedical = () => {
               </Button>
             </div>
             <div className="space-y-6">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary border-primary/50 pt-2">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <Users className="w-6 h-6 text-primary" />
@@ -74,7 +74,7 @@ const BusinessMedical = () => {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary border-primary/50 pt-2">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <Building className="w-6 h-6 text-primary" />
@@ -90,7 +90,7 @@ const BusinessMedical = () => {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary border-primary/50 pt-2">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <HeartPulse className="w-6 h-6 text-primary" />

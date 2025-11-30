@@ -63,7 +63,7 @@ const BusinessTravel = () => {
               </div>
             </div>
             <div className="space-y-6">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/50 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -77,7 +77,7 @@ const BusinessTravel = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/50 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -91,7 +91,7 @@ const BusinessTravel = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="hover:shadow-lg transition-all hover:scale-105 hover:border-primary pt-2 border-primary/50 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">

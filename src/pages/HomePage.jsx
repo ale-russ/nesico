@@ -3,7 +3,6 @@ import { AdCards } from "../components/home/AdCards";
 import { HeroSection } from "../components/home/HeroSection";
 import NewsAndStories from "../components/home/NewsAndStories";
 import { Searchbar } from "../components/home/Searchbar";
-import { newsItems } from "../data/newsItems";
 
 function HomePage() {
   return (
@@ -37,23 +36,7 @@ function HomePage() {
         </div>
       </div>
 
-      {/* News & Stories – Horizontal Scroll */}
-      <section className="m-0 lg:mx-auto py-8">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
-            News & Stories
-          </h2>
-          <div className="overflow-x-auto scrollbar-hide px-4">
-            <div className="flex gap-3 md:gap-6 snap-x snap-mandatory overflow-auto">
-              {newsItems.map((item, index) => (
-                <div key={index} className="w-80 shrink-0 snap-center">
-                  <NewsAndStories data={item} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <NewsAndStories />
     </div>
   );
 }

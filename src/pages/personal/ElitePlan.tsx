@@ -59,8 +59,8 @@ const ElitePlan = () => {
                 <Link to="/contact">Request Elite Consultation</Link>
               </Button>
             </div>
-            <Card className="border-2 border-primary shadow-xl">
-              <CardContent className="p-8">
+            <Card className="hover:shadow-lg transition-all duration-300 border border-primary/50 hover:border-primary hover:scale-105 animate-fade-in p-1">
+              <CardContent className="p-6">
                 <div className="text-center mb-6">
                   <Crown className="w-12 h-12 text-primary mx-auto mb-3" />
                   <h3 className="text-2xl font-bold">Elite Membership</h3>

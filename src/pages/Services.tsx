@@ -29,11 +29,49 @@ const Services = () => {
       {/* Services Grid */}
       <section className="section-padding">
         <div className="container-width">
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Our services are designed to meet the diverse needs of individuals,
+            families, and organizations, ensuring protection, financial
+            security, and peace of mind in an unpredictable world.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <Card
+                key={service.title}
+                className="border border-primary/50 hover:shadow-lg transition-all hover:scale-105 duration-300 hover:border-primary animate-fade-in pt-2"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <service.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-2">{service.title}</h3>
+                  <p className="text-muted-foreground text-sm">
+                    {service.description}
+                  </p>
+                  {/* <div className="mt-4">
+                    <Button variant="outline" size="sm" className="w-full">
+                      Learn More
+                    </Button>
+                  </div> */}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* <section className="section-padding">
+        <div className="container-width">
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Our services are designed to meet the diverse needs of individuals,
+            families, and organizations, ensuring protection, financial
+            security, and peace of mind in an unpredictable world.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card
                 key={service.title}
-                className="hover:shadow-lg transition-all duration-300 border border-primary/20 hover:border-primary hover:scale-105 animate-fade-in p-1"
+                className="hover:shadow-lg transition-all duration-300 border border-primary/20 hover:border-primary hover:scale-105 animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6">
@@ -53,7 +91,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Reinsurance Partners */}
       <section className="bg-muted section-padding">

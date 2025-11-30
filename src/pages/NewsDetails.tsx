@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router";
 
 import { Button } from "@/components/ui/button";
@@ -74,11 +74,11 @@ export default function NewsDetails() {
               {newsItems
                 .filter((item) => item.id !== news.id)
                 .slice(0, 2)
-                .map((item, index) => (
+                .map((item) => (
                   <Link
                     key={item.id}
                     to={`/news/${item.id}`}
-                    className="group-block"
+                    className="group block cursor-pointer"
                   >
                     <div className="aspect-ratio overflow-hidden rounded-lg mb-3">
                       <img
@@ -90,7 +90,11 @@ export default function NewsDetails() {
                     <p className="text-xs text-muted-foreground mb-1">
                       {item.date}
                     </p>
-                    <h3 className="font-bold group-hover:text-primary transition-colors">
+                    <h3
+                      className={
+                        "font-bold group-hover:text-primary transition-colors"
+                      }
+                    >
                       {item.title}
                     </h3>
                   </Link>

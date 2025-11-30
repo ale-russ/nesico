@@ -59,7 +59,7 @@ const TravelInsurance = () => {
             {coverages.map((item, index) => (
               <Card
                 key={index}
-                className="text-center hover:shadow-lg transition-shadow"
+                className="text-center hover:shadow-lg transition-shadow p-6 border border-primary/50"
               >
                 <CardContent className="p-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -72,8 +72,8 @@ const TravelInsurance = () => {
             ))}
           </div>
 
-          <Card className="max-w-2xl mx-auto">
-            <CardContent className="p-8">
+          <Card className="hover:shadow-lg transition-all duration-300 border border-primary/20 hover:border-primary hover:scale-105 animate-fade-in p-1">
+            <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-6 text-center">
                 Plan Options
               </h3>

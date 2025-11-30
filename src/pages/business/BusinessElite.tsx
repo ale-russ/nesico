@@ -63,7 +63,7 @@ const BusinessElite = () => {
                 <Link to="/contact">Schedule Executive Consultation</Link>
               </Button>
             </div>
-            <Card className="border-2 border-primary shadow-xl">
+            <Card className="hover:shadow-lg transition-all duration-300 border-2 border-primary  hover:scale-105 animate-fade-in pt-2">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">

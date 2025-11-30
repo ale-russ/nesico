@@ -90,7 +90,7 @@ const FAQ = () => {
               Our team is here to help you with any inquiries.
             </p>
             <Button asChild>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact-us">Contact Us</Link>
             </Button>
           </div>
         </div>
