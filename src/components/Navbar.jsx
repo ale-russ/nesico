@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.jpeg";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   { name: "Home", url: "/" },
@@ -27,14 +28,14 @@ export const Navbar = () => {
       <div className="mx-auto w-full max-w-7xl px-4">
         <div className="bg-white rounded-3xl shadow-lg p-4 flex items-center justify-between relative">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img
               src={logo}
               alt="NESICO Logo"
               className="h-14 w-14 rounded-2xl object-cover"
             />
             <h1 className="font-bold text-xl text-primary">NESICO</h1>
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8">

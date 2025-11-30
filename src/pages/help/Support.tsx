@@ -17,7 +17,7 @@ const Support = () => {
     <div className="min-h-screen bg-background">
       <HeroWrapper
         children={
-          <section className="pb-16 ">
+          <section className="pb-16">
             <div className="container-width px-4 sm:px-6 lg:px-8">
               <div className="text-center max-w-3xl mx-auto">
                 <Headphones className="w-16 h-16 mx-auto mb-4 opacity-90" />

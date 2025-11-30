@@ -2,7 +2,10 @@ import HeroWrapper from "../components/HeroWrapper";
 import { AdCards } from "../components/home/AdCards";
 import { HeroSection } from "../components/home/HeroSection";
 import NewsAndStories from "../components/home/NewsAndStories";
+import Partners from "../components/home/Partners";
+import QuoteForm from "../components/home/QuoteForm";
 import { Searchbar } from "../components/home/Searchbar";
+import Testimonials from "../components/home/Testimonials";
 
 function HomePage() {
   return (
@@ -35,7 +38,9 @@ function HomePage() {
           />
         </div>
       </div>
-
+      <Testimonials />
+      <QuoteForm />
+      <Partners />
       <NewsAndStories />
     </div>
   );

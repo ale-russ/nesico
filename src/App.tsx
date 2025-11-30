@@ -21,6 +21,7 @@ import FAQ from "./pages/help/FAQ";
 import Claims from "./pages/help/Claims";
 import Support from "./pages/help/Support";
 import NotFound from "./pages/NoFound";
+import Team from "./pages/Team";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ function App() {
               <Route path="/help/faq" element={<FAQ />} />
               <Route path="/help/claims" element={<Claims />} />
               <Route path="/help/support" element={<Support />} />
+              <Route path="/team" element={<Team />} />
             </Routes>
             <Footer />
           </BrowserRouter>
