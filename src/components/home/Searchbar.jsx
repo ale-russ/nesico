@@ -1,5 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
+import Stats from "./Stats";
 
 export const Searchbar = () => {
   return (
@@ -22,7 +23,7 @@ export const Searchbar = () => {
         </div>
       </div>
       <br />
-      <div className="flex justify-between mx-auto border border-primary/20 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4 px-8 my-8 space-y-4 ">
+      {/* <div className="flex justify-between mx-auto border border-primary/20 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4 px-8 my-8 space-y-4 ">
         <h2 className="font-bold text-sm md:text-lg text-center">
           1.2M
           <br />
@@ -38,7 +39,8 @@ export const Searchbar = () => {
           <br />
           Worth of Insurance
         </h2>
-      </div>
+      </div> */}
+      <Stats />
     </div>
   );
 };

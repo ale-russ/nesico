@@ -95,7 +95,7 @@ const QuoteForm = () => {
             </div>
           </div>
 
-          <Card className="animate-scale-in border border-primary">
+          <Card className="animate-scale-in border border-primary/40 drop-shadow-xl shadow-2xl">
             <CardHeader>
               <CardTitle>Request a Quote</CardTitle>
             </CardHeader>
