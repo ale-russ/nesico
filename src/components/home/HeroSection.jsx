@@ -26,7 +26,9 @@ export const HeroSection = () => {
     <div className="mx-auto text-white  w-full md:w-5/6 xl:w-2/4">
       <div className="my-8">
         <h1 className="mx-auto text-center font-medium text-2xl animate-none">
-          Empowering Brands And Businesses <br /> Through Life Insurance
+          {/* Empowering Brands And Businesses <br /> Through Life Insurance */}
+          Your Risk Managers in <br />
+          the Republic of South Sudan
         </h1>
       </div>
       <div className="flex items-center justify-between flex-col md:flex-row mb-8 px-4">

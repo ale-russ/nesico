@@ -45,7 +45,7 @@ function HomePage() {
       <QuoteForm />
       <Partners />
       <NewsAndStories />
-      <LiveChat />
+      {/* <LiveChat /> */}
     </div>
   );
 }

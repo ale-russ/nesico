@@ -23,7 +23,7 @@ const stats = [
 
 const AnimatedCounter = ({
   end,
-  duration = 200,
+  duration = 2000,
   format,
 }: {
   end: number;
@@ -83,6 +83,7 @@ const Stats = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
+              key={index}
               className="text-center animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >

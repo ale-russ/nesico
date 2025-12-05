@@ -95,6 +95,7 @@ const PremiumCalculator = () => {
                   onChange={(e) => setAge(e.target.value)}
                   min="18"
                   max="100"
+                  className="has-[input:focus-within]:outline-indigo-600"
                 />
               </div>
 
