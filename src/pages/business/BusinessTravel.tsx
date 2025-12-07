@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Plane, Check, Globe, Users, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import HeroWrapper from "../../components//HeroWrapper";
+import HeroWrapper from "../../components/HeroWrapper";
 
 const BusinessTravel = () => {
   const benefits = [
@@ -20,6 +20,7 @@ const BusinessTravel = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroWrapper
+        className="pt-20"
         children={
           <section className="pb-16 ">
             <div className="container-width px-4 sm:px-6 lg:px-8">

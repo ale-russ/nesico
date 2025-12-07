@@ -22,6 +22,7 @@ import Claims from "./pages/help/Claims";
 import Support from "./pages/help/Support";
 import NotFound from "./pages/NoFound";
 import Team from "./pages/Team";
+import Header from "./components/Header";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +34,8 @@ function App() {
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Navbar />
+            {/* <Navbar />/ */}
+            <Header />
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about-us" element={<AboutUs />} />

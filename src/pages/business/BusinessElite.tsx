@@ -20,6 +20,7 @@ const BusinessElite = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroWrapper
+        className="pt-20"
         children={
           <section className="pb-16 ">
             <div className="container-width px-4 sm:px-6 lg:px-8">

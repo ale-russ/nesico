@@ -70,7 +70,7 @@ const AnimatedCounter = ({
   }, [end, duration, hasAnimated]);
 
   return (
-    <div ref={counterRef} className="text-4xl font-bold text-foreground mb-20">
+    <div ref={counterRef} className="text-4xl font-bold text-foreground mb-5">
       {format(count)}
     </div>
   );
@@ -80,7 +80,7 @@ const Stats = () => {
   return (
     <section className="py-8 bg-background">
       <div className="container-width px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}

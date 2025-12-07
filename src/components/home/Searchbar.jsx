@@ -23,23 +23,7 @@ export const Searchbar = () => {
         </div>
       </div>
       <br />
-      {/* <div className="flex justify-between mx-auto border border-primary/20 w-full md:w-5/6 xl:w-2/4 rounded-xl shadow-xl shadow-primary/8 p-4 px-8 my-8 space-y-4 ">
-        <h2 className="font-bold text-sm md:text-lg text-center">
-          1.2M
-          <br />
-          Lives insured
-        </h2>
-        <h2 className="font-bold text-sm md:text-lg text-center">
-          10+
-          <br />
-          Years Of Service
-        </h2>
-        <h2 className="font-bold text-sm md:text-lg text-center">
-          150M
-          <br />
-          Worth of Insurance
-        </h2>
-      </div> */}
+
       <Stats />
     </div>
   );

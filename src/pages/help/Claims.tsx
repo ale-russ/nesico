@@ -8,7 +8,6 @@ import {
   CheckCircle,
   AlertCircle,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 
 import HeroWrapper from "../../components/HeroWrapper";
 
@@ -39,6 +38,7 @@ const Claims = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroWrapper
+        className="pt-20"
         children={
           <section className="pb-16 ">
             <div className="container-width px-4 sm:px-6 lg:px-8">

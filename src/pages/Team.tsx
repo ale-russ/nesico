@@ -51,6 +51,7 @@ const Team = () => {
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
       <HeroWrapper
+        className="pt-20"
         children={
           <section className="pb-16">
             <div className="container-width px-4 sm:px-6 lg:px-8 mx-auto text-center">

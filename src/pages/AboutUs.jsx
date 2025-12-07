@@ -231,7 +231,7 @@ export const AboutUs = () => {
                 <Link to="/services">View Our Services</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact-us">Contact Us</Link>
               </Button>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import HeroWrapper from "../components/HeroWrapper";
 import { AdCards } from "../components/home/AdCards";
 import { HeroSection } from "../components/home/HeroSection";
+import ImageCarousel from "../components/home/ImageCarousel";
 import LiveChat from "../components/home/LiveChat";
 import NewsAndStories from "../components/home/NewsAndStories";
 import Partners from "../components/home/Partners";
@@ -12,7 +13,7 @@ import Testimonials from "../components/home/Testimonials";
 function HomePage() {
   return (
     <div className="flex flex-col">
-      <HeroWrapper children={<HeroSection />} />
+      <HeroWrapper children={<HeroSection />} className="pt-20" />
 
       {/* Search + Stats */}
       <div className="mt-40">
@@ -20,7 +21,7 @@ function HomePage() {
       </div>
 
       {/* Ad Cards Grid */}
-      <div className="max-w-7xl mx-auto px-4 mb-8">
+      <div className="max-w-7xl mx-auto px-4 md:mb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-8 gap-y-1 md:gap-y-0">
           <AdCards
             label="Insure Your Lives Now"
@@ -41,8 +42,10 @@ function HomePage() {
         </div>
       </div>
       <PremiumCalculator />
+      <ImageCarousel />
       <Testimonials />
       <QuoteForm />
+      <ImageCarousel className="bg-background" />
       <Partners />
       <NewsAndStories />
       {/* <LiveChat /> */}

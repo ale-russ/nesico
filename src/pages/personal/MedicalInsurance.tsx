@@ -18,6 +18,7 @@ const MedicalInsurance = () => {
   return (
     <div className="min-h-screen bg-background">
       <HeroWrapper
+        className="pt-20"
         children={
           <section className="pb-16 ">
             <div className="container-width px-4 sm:px-6 lg:px-8">
@@ -49,7 +50,7 @@ const MedicalInsurance = () => {
               <ul className="space-y-3 mb-8">
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <Check className="w-5 h-5 text-primary shrink-0" />
                     <span>{benefit}</span>
                   </li>
                 ))}

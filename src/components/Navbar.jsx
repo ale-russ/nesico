@@ -26,19 +26,19 @@ export const Navbar = () => {
   return (
     <div className="bg-primary w-full pt-6 pb-12">
       <div className="mx-auto w-full max-w-7xl px-4">
-        <div className="bg-white rounded-3xl shadow-lg p-4 flex items-center justify-between relative">
+        <div className="bg-white rounded-3xl shadow-lg p-4 flex items-center relative h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
             <img
               src={logo}
               alt="NESICO Logo"
-              className="h-14 w-14 rounded-2xl object-cover"
+              className="h-12 w-12 rounded-2xl object-cover"
             />
             <h1 className="font-bold text-xl text-primary">NESICO</h1>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex mx-auto gap-8">
             {navLinks.map((item, index) => (
               <button
                 key={index}
