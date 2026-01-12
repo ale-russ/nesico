@@ -16,9 +16,7 @@ function HomePage() {
       <HeroWrapper children={<HeroSection />} className="pt-20" />
 
       {/* Search + Stats */}
-      <div className="mt-40">
-        <Searchbar />
-      </div>
+      <Searchbar />
 
       {/* Ad Cards Grid */}
       <div className="max-w-7xl mx-auto px-4 md:mb-8">
@@ -41,8 +39,8 @@ function HomePage() {
           />
         </div>
       </div>
-      <PremiumCalculator />
-      <ImageCarousel />
+      {/* <PremiumCalculator /> */}
+      {/* <ImageCarousel /> */}
       <Testimonials />
       <QuoteForm />
       <ImageCarousel className="bg-background" />
